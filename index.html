@@ -17,6 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
+  <div class="background-modal is-hidden" data-modal>
+    <div class="modal-main">
+      <button class="button-close-modal" data-modal-close>
+        <svg width="18px" height="18px">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+        
+      </button>
+    </div>    
+  </div>  
    <header class="main-header">
       <nav class="header-nav container">
         <a href="./index.html" class="header-list-item-studio link-studio" target="_self"
@@ -55,16 +65,11 @@
       </nav>
     </header>
 
-
-
     <main>
-
-      <hr class="line-main">
-
       <section class="section-solutions">
         <h1 class="tittle-main">SOLUCIONES EFICACES PARA<br />SU NEGOCIO</h1>
         <div class="btn-center">
-          <button type="button" class="button-main">Solicite nuestros servicios</button>
+          <button type="button" class="button-main" data-modal-open>Solicite nuestros servicios</button>
         </div>
       </section>
 
@@ -387,5 +392,6 @@
         </ul>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
